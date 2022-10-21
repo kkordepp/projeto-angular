@@ -1,0 +1,13 @@
+h5 {
+    color: white;
+}
+
+.footer {
+    background-color: #195E63;
+    text-align: center;
+}
+
+.footer a {
+    text-decoration: none;
+    color: rgb(0, 180, 180);
+}

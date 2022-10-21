@@ -1,0 +1,31 @@
+<h4>Cadastro de Funcionários</h4>
+
+<form>
+    <p>Nome: <input type="text" name="name" [(ngModel)]="funcionario.nome"></p>
+    <p>Idade: <input type="text" name="name" [(ngModel)]="funcionario.idade"></p>
+    <p>Celular: <input type="text" name="name" [(ngModel)]="funcionario.celular"></p>
+    <p>CPF: <input type="text" name="name" [(ngModel)]="funcionario.cpf"></p>
+    <button (click)="cadastrar()">Cadastrar</button>
+</form>
+
+<table>
+    <tr>
+        <th>Id</th>
+        <th>Nome</th>
+        <th>Idade</th>
+        <th>Celular</th>
+        <th>CPF</th>
+        <th>Ações</th>
+    </tr>
+
+    <tr class="bd" *ngFor="let funcionario of funcionarios">
+        <td>{{funcionario.id}}</td>
+        <td>{{funcionario.nome}}</td>
+        <td>{{funcionario.idade}}</td>
+        <td>{{funcionario.celular}}</td>
+        <td>{{funcionario.cpf}}</td>
+        <td><button (click)="atualizar(funcionario.id)">Atualizar</button>
+            <button (click)="remover(funcionario.id)">Remover</button>
+        </td>
+    </tr>
+</table>

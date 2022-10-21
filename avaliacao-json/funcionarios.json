@@ -1,0 +1,18 @@
+{
+  "funcionarios": [
+    {
+      "nome": "Pedro",
+      "idade": "17",
+      "celular": "21997655842",
+      "cpf": "123456789",
+      "id": 1
+    },
+    {
+      "nome": "Matheus",
+      "idade": "23",
+      "celular": "21962547810",
+      "cpf": "123789456",
+      "id": 2
+    }
+  ]
+}
